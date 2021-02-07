@@ -7,7 +7,7 @@ class Solution:
             x_sign = 1
             x_new = str(x)
 
-        x_new = x_sign * int("".join(x_new[::-1]))
+        x_new = x_sign * int(x_new[::-1])
         if abs(x_new) > 2**31:
             return 0
         else:
